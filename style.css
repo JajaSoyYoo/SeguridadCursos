@@ -1,0 +1,25 @@
+header{
+    background-color:white;
+
+}
+
+.botonheader {
+    background-color: transparent;
+}
+
+.filabotonesinicio{
+    border: 10cap;
+}
+
+.fondoinicio{
+    background-image: url(images/BackgroundInicio.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+
+#cap1 {
+    background-image: url(images/pizarraseguridad.jpg);
+}
