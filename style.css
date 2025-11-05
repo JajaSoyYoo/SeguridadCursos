@@ -23,3 +23,10 @@ header{
 #cap1 {
     background-image: url(images/pizarraseguridad.jpg);
 }
+
+.divider {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, rgba(0,0,0,0), #616161, rgba(0,0,0,0));
+  margin: 1rem 0;
+}
