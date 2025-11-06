@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catálogo - Centinela</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Header incluido desde partials -->
+    <div data-include="../partials/header.html"></div>
+
+    <main class="container py-4">
+      <nav aria-label="breadcrumb" class="mb-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Catálogo</li>
+        </ol>
+      </nav>
+
+      <header class="mb-4">
+        <h1 class="h3">Catálogo completo de cursos y servicios</h1>
+        <p class="text-muted">Explora nuestra oferta de capacitaciones, asesorías y equipos orientados a seguridad y protección civil.</p>
+      </header>
+
+      <!-- Grid de items (puedes añadir más tarjetas) -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <a href="../index.html" class="text-decoration-none">
+            <div class="card course-card h-100 accent-red">
+              <img src="../images/Proteccion-civil-logo-gen.png" class="card-img-top" alt="Protección civil">
+              <div class="card-body">
+                <h5 class="card-title course-title">Protección civil</h5>
+                <p class="card-text">Programas de prevención, brigadas, planes de emergencia y acompañamiento ante autoridades.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="../index.html" class="text-decoration-none">
+            <div class="card course-card h-100 accent-blue">
+              <img src="../images/707a81c37f8af20e8f755a19a0f47ebc_original.jpg" class="card-img-top" alt="Seguridad laboral y STPS">
+              <div class="card-body">
+                <h5 class="card-title course-title">Seguridad laboral y STPS</h5>
+                <p class="card-text">Capacitaciones en normatividad, prevención de riesgos y cumplimiento de la STPS.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="../index.html" class="text-decoration-none">
+            <div class="card course-card h-100 accent-orange">
+              <img src="../images/desktop_87cb78d5-4718-4878-83b0-8fcb74b979b0.png" class="card-img-top" alt="Equipo de emergencias">
+              <div class="card-body">
+                <h5 class="card-title course-title">Equipo de emergencias</h5>
+                <p class="card-text">Suministro y colocación de equipos, mantenimiento y formación en uso de equipos de emergencia.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="../index.html" class="text-decoration-none">
+            <div class="card course-card h-100 accent-green">
+              <img src="../images/notaweb_800x400_fotoslimpias_4.jpg" class="card-img-top" alt="Ambiental">
+              <div class="card-body">
+                <h5 class="card-title course-title">Ambiental</h5>
+                <p class="card-text">Asesoría en trámites con SEMARNAT/SEMADET y cursos sobre cumplimiento ambiental.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Ejemplo de tarjeta adicional -->
+        <div class="col">
+          <a href="#" class="text-decoration-none">
+            <div class="card course-card h-100">
+              <img src="../images/pizarraseguridad.jpg" class="card-img-top" alt="Servicio adicional">
+              <div class="card-body">
+                <h5 class="card-title course-title">Servicios adicionales</h5>
+                <p class="card-text">Consultoría personalizada, auditorías y cursos a medida para empresas.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer incluido desde partials -->
+    <div data-include="../partials/footer.html"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="../js/includes.js"></script>
+  </body>
+</html>
