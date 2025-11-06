@@ -8,17 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   </head>
   <body>
-    <header>
+    <header class="py-2">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-auto">
                     <img src="images/logo.png" alt="logo" width="40" height="60">
                 </div>
-                <div class="col text-end my-auto">
-                    <a href="">Catálogo</a>
-                    <a href="">Sobre nosotros</a>
-                    <a href="">Contáctanos</a>
-                    <a href="https://web.whatsapp.com"><img src="images/WhatsApp.png" alt="Contacto WhatsApp" width="20" height="20"></a>
+                <div class="col d-flex flex-nowrap justify-content-end align-items-center">
+                    <a href="" class="btn btn-danger rounded-pill mx-1 btn-sm">Catálogo</a>
+                    <a href="" class="btn btn-primary rounded-pill mx-1 btn-sm">Sobre nosotros</a>
+                    <a href="" class="btn btn-warning rounded-pill mx-1 btn-sm">Contáctanos</a>
+                    <a href="https://wa.me/523325097017" target="_blank"><img src="images/WhatsApp.png" alt="Contacto WhatsApp" width="30" height="30"></a>
                 </div>
             </div>
         </div>
@@ -31,84 +31,68 @@
         </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container text-center mt-5">
         <div class="position-relative">
             <h4>Conoce nuestras capacitaciones</h4>
             <h5>En nuestra organizacion nos preocupamos por la calidad de nuestros servicios</h5>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <a href="">
-                    <div>
-                        <h5 class="row">Protección civil</h1>
-                            <img src="images/pizarraseguridad.jpg" alt="" height="250" width="245">
-                            <div class="row">
-                                <div class="col">
-                                    <h6>Las capacitaciones mas importantes aqui</h6>
-                                    <p>Aqui va la descripcion que llame la atencion</p>
-                                </div>
-                            </div>
-                    </div>
-                    
-                </a>
-            </div>
-
-            <div class="col">
-                <a href="">
-                    <div>
-                        <h5 class="row">Seguridad laboral y STPS</h1>
-                            <img src="images/pizarraseguridad.jpg" alt="" height="250" width="245">
-                        <div class="row">
-                            <div class="col">
-                                <h6>Las capacitaciones mas importantes aqui</h6>
-                                <p>Aqui va la descripcion que llame la atencion</p>
+        <!-- Cursos: card grid responsive -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
+                <div class="col">
+                    <a href="" class="text-decoration-none">
+                        <div class="card course-card h-100 accent-red">
+                            <img src="images/Proteccion-civil-logo-gen.png" class="card-img-top" alt="Protección civil">
+                            <div class="card-body">
+                                <h5 class="card-title course-title">Protección civil</h5>
+                                <p class="card-text">Asesoría y acompañamiento a trámites con la autoridad competente, programas de protección civil y capacitación en brigadas multifuncionales.</p>
                             </div>
                         </div>
-                    </div>
-                    
-                </a>
-            </div>
+                    </a>
+                </div>
 
-            <div class="col">
-                <a href="">
-                    <div>
-                        <h5 class="row">Equipo de emergencias</h1>
-                            <img src="images/pizarraseguridad.jpg" alt="" height="250" width="245">
-                        <div class="row">
-                            <div class="col">
-                                <h6>Las capacitaciones mas importantes aqui</h6>
-                                <p>Aqui va la descripcion que llame la atencion</p>
+                <div class="col">
+                    <a href="" class="text-decoration-none">
+                        <div class="card course-card h-100 accent-blue">
+                            <img src="images/707a81c37f8af20e8f755a19a0f47ebc_original.jpg" class="card-img-top" alt="Seguridad laboral y STPS">
+                            <div class="card-body">
+                                <h5 class="card-title course-title">Seguridad laboral y STPS</h5>
+                                <p class="card-text">Capacitación en normatividad vigente y temas de seguridad industrial.</p>
                             </div>
                         </div>
-                    </div>
-                    
-                </a>
-            </div>
+                    </a>
+                </div>
 
-            <div class="col">
-                <a href="">
-                    <div>
-                        <h5 class="row">Ambiental</h1>
-                            <img src="images/pizarraseguridad.jpg" alt="" height="250" width="245">
-                        <div class="row">
-                            <div class="col">
-                                <h6>Las capacitaciones mas importantes aqui</h6>
-                                <p>Aqui va la descripcion que llame la atencion</p>
+                <div class="col">
+                    <a href="" class="text-decoration-none">
+                        <div class="card course-card h-100 accent-orange">
+                            <img src="images/desktop_87cb78d5-4718-4878-83b0-8fcb74b979b0.png" class="card-img-top" alt="Equipo de emergencias">
+                            <div class="card-body">
+                                <h5 class="card-title course-title">Equipo de emergencias</h5>
+                                <p class="card-text">Venta, distribución y colocación de equipos de emergencias en inmuebles.</p>
                             </div>
                         </div>
-                    </div>
-                    
-                </a>
-            </div>
+                    </a>
+                </div>
 
-        </div>
+                <div class="col">
+                    <a href="" class="text-decoration-none">
+                        <div class="card course-card h-100 accent-green">
+                            <img src="images/notaweb_800x400_fotoslimpias_4.jpg" class="card-img-top" alt="Ambiental">
+                            <div class="card-body">
+                                <h5 class="card-title course-title">Ambiental</h5>
+                                <p class="card-text">Asesoría y acompañamiento en trámites con autoridades competentes (SEMARNAT Y SEMADET).</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
     </div>
 
     <hr class="divider my-4">
     <div class="container">
-        <div class="col">
-            <a href="https://www.facebook.com/share/172gEbSGVy/?mibextid=wwXIfr">
+        <div class="col mb-5">
+            <a href="https://www.facebook.com/share/172gEbSGVy/?mibextid=wwXIfr" target="_blank">
                 <img src="images/facebook-logo-icon-facebook-logo-png-transparent-svg-vector-bie-supply-16.webp" alt="Facebook" height="40" width="40">            
             </a>    
         </div>
