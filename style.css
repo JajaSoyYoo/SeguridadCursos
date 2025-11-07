@@ -33,7 +33,7 @@ header{
 
 /* Estilos para tarjetas con borde de color (acentos) y ligero enfoque negro */
 .course-card {
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     border-radius: 12px;
     overflow: hidden;
     background: linear-gradient(180deg, #ffffffcc, #f8fafb);
@@ -41,11 +41,11 @@ header{
     box-shadow: 0 6px 18px rgba(11,21,40,0.06);
 }
 
-/* colores de borde basados en el logo */
-.course-card.accent-red   { border-color: #d9534f; } /* rojo */
-.course-card.accent-blue  { border-color: #0d6efd; } /* azul */
-.course-card.accent-orange{ border-color: #fd7e14; } /* naranja */
-.course-card.accent-green { border-color: #198754; } /* verde */
+/* colores de borde */
+.course-card.accent-red   { border-color: #d9534f; } 
+.course-card.accent-blue  { border-color: #0d6efd; } 
+.course-card.accent-orange{ border-color: #fd7e14; } 
+.course-card.accent-green { border-color: #198754; } 
 
 /* Hover / focus: elevación y pequeño "enfoque" negro alrededor */
 .course-card:hover,
