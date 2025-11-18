@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Protección Civil - Centinela</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header incluido desde partials -->
+    <div data-include="../../../partials/header.html"></div>
+
+    <main class="container py-4">
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="/catalogo/">Catálogo</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Protección Civil</li>
+            </ol>
+        </nav>
+
+        <header class="mb-4">
+            <h1 class="h3">Protección Civil</h1>
+            <p class="text-muted">Programas y capacitaciones para la prevención y gestión de emergencias en empresas e inmuebles.</p>
+        </header>
+
+        <!-- Grid de ramas principales -->
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-5 align-items-start">
+            <div class="col">
+                <a href="/servicios/proteccion-civil/programa-interno/" class="text-decoration-none">
+                    <div class="card course-card h-100 accent-red">
+                        <img src="../../../images/Proteccion-civil-logo-gen.png" class="card-img-top" alt="Programa Interno">
+                        <div class="card-body">
+                            <h5 class="card-title course-title">Programa Interno de Protección Civil</h5>
+                            <p class="card-text">Desarrollo e implementación de planes integrales de protección civil adaptados a tu organización.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <div class="card course-card h-100 accent-red" style="cursor:pointer;" data-bs-toggle="collapse" data-bs-target="#submenuBrigadas" aria-expanded="false" aria-controls="submenuBrigadas">
+                    <img src="../../../images/Proteccion-civil-logo-gen.png" class="card-img-top" alt="Brigadas">
+                    <div class="card-body">
+                        <h5 class="card-title course-title">Brigadas de Protección Civil</h5>
+                        <p class="card-text">Formación de equipos especializados en respuesta a emergencias y evacuación.</p>
+                        <!-- Submenú dentro del recuadro -->
+                        <div class="collapse mt-3" id="submenuBrigadas">
+                            <div class="card card-body p-2">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#" class="text-decoration-none">Brigada de Primeros Auxilios</a></li>
+                                    <li><a href="#" class="text-decoration-none">Brigada de Evacuación</a></li>
+                                    <li><a href="#" class="text-decoration-none">Brigada de Incendios</a></li>
+                                    <li><a href="#" class="text-decoration-none">Brigada de Búsqueda y Rescate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer incluido desde partials -->
+    <div data-include="../../../partials/footer.html"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/includes.js"></script>
+</body>
+</html>
