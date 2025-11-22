@@ -33,10 +33,10 @@ header{
 }
 
 /* colores de borde */
-.course-card.accent-red   { border-color: #d9534f; } 
-.course-card.accent-blue  { border-color: #0d6efd; } 
-.course-card.accent-orange{ border-color: #fd7e14; } 
-.course-card.accent-green { border-color: #198754; } 
+.course-card.accent-red   { border-color: #c4302b; }   /* rojo apagado */
+.course-card.accent-blue  { border-color: #0b5ed7; }   /* azul vivo (armoniza con hero) */
+.course-card.accent-orange{ border-color: #f6c84c; }   /* dorado suave */
+.course-card.accent-green { border-color: #1fa46a; }   /* verde moderado */
 
 /* Hover / focus: elevación y pequeño "enfoque" negro alrededor */
 .course-card:hover,
@@ -165,4 +165,148 @@ header{
   .fondoinicio { height: 50vh; }
   .fondoinicio .carousel-caption h1 { font-size: 1.4rem; }
   .fondoinicio .carousel-caption h3 { font-size: 1rem; }
+}
+
+/* Estilo serio y profesional para el submenú de brigadas */
+#submenuBrigadas .list-unstyled li + li {
+  margin-top: .45rem;
+}
+
+#submenuBrigadas .list-unstyled a {
+  color: #111 !important;              /* texto negro */
+  font-weight: 600;
+  display: block;
+  padding: .28rem .6rem;
+  padding-left: 1.1rem;                /* espacio para el indicador */
+  border-radius: .35rem;
+  position: relative;
+  transition: color .18s ease, background-color .18s ease;
+  text-decoration: none !important;
+}
+
+/* pequeño indicador rojo a la izquierda para mantener el foco en el color corporativo */
+#submenuBrigadas .list-unstyled a::before {
+  content: "";
+  position: absolute;
+  left: .35rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #c4302b; /* rojo apagado */
+  border-radius: 2px;
+  opacity: .95;
+}
+
+/* hover: tono rojo y fondo sutil para claridad visual */
+#submenuBrigadas .list-unstyled a:hover {
+  color: #c4302b !important;
+  background: rgba(196,48,43,0.04);
+}
+
+/* Estilo serio y profesional para el submenú de Seguridad laboral (acento azul) */
+#submenuSeguridad .list-unstyled li + li {
+  margin-top: .45rem;
+}
+
+#submenuSeguridad .list-unstyled a {
+  color: #111 !important;           /* texto negro */
+  font-weight: 600;
+  display: block;
+  padding: .28rem .6rem;
+  padding-left: 1.1rem;             /* espacio para el indicador */
+  border-radius: .35rem;
+  position: relative;
+  transition: color .18s ease, background-color .18s ease;
+  text-decoration: none !important;
+}
+
+/* Indicador pequeño azul a la izquierda */
+#submenuSeguridad .list-unstyled a::before {
+  content: "";
+  position: absolute;
+  left: .35rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #0b5ed7; /* azul */
+  border-radius: 2px;
+  opacity: .95;
+}
+
+/* hover: tono azul y fondo sutil */
+#submenuSeguridad .list-unstyled a:hover {
+  color: #0b5ed7 !important;
+  background: rgba(11,94,215,0.04);
+}
+
+/* Estilo serio y profesional para el submenú de Protección civil (acento rojo) */
+#submenuProteccion .list-unstyled li + li { margin-top: .45rem; }
+
+#submenuProteccion .list-unstyled a {
+  color: #111 !important;
+  font-weight: 600;
+  display: block;
+  padding: .28rem .6rem;
+  padding-left: 1.2rem; /* más espacio para el indicador */
+  border-radius: .35rem;
+  position: relative;
+  transition: color .18s ease, background-color .18s ease;
+  text-decoration: none !important;
+}
+
+#submenuProteccion .list-unstyled a::before {
+  content: "";
+  position: absolute;
+  left: .45rem; /* separa el punto del texto */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #c4302b; /* rojo apagado */
+  border-radius: 2px;
+  opacity: .95;
+}
+
+#submenuProteccion .list-unstyled a:hover {
+  color: #c4302b !important;
+  background: rgba(196,48,43,0.04);
+}
+
+/* En pantallas pequeñas mantener suficiente separación */
+@media (max-width: 767.98px) {
+  #submenuProteccion .list-unstyled a {
+    padding-left: 1rem; /* ajuste para móvil */
+  }
+  #submenuProteccion .list-unstyled a::before {
+    left: .35rem;
+  }
+}
+
+/* Botón "Ver catálogo completo" estilo similar a tarjetas */
+.btn-catalog {
+  border-width: 2px;
+  border-color: #111;
+  color: #111;
+  background: #fff;
+  border-radius: .6rem;
+  padding: .6rem 1.2rem;
+  font-weight: 700;
+  transition: transform .18s ease, box-shadow .18s ease, color .12s ease;
+}
+
+/* Botón "Ver catálogo completo" — hover cambia a amarillo suave manteniendo texto oscuro */
+.btn-catalog:hover,
+.btn-catalog:focus {
+  color: #111; /* texto oscuro para contraste */
+  background: #f6c84c; /* amarillo suave */
+  border-color: #f6c84c;
+  box-shadow: 0 14px 32px rgba(246,200,76,0.12);
+  transform: translateY(-6px);
+  text-decoration: none;
+}
+
+.btn-catalog:active {
+  transform: translateY(-2px);
 }
