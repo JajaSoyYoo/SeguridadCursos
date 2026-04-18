@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos de Emergencia | Centinela</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #f6c84c;
+            color: #111;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.06);
+        }
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .norm-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .norm-badge {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .category-header {
+            border-bottom: 3px solid #f6c84c;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header incluido desde partials -->
+    <div data-include="../../../partials/header.html"></div>
+
+    <main class="container py-4">
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="/catalogo/">Catálogo</a></li>
+                <li class="breadcrumb-item"><a href="/servicios/equipo-emergencias/">Equipo de Emergencias</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Productos</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <header class="mb-5">
+                    <h1 class="h2">Catálogo de Productos</h1>
+                    <p class="text-muted">Explora nuestro catálogo de equipos de emergencia y protección certificados.</p>
+                </header>
+
+                <!-- Protección Personal -->
+                <section class="mb-5">
+                    <h2 class="h4 category-header">Protección Personal</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <a href="/servicios/equipo-emergencias/productos/chalecos-de-proteccion/" class="text-decoration-none">
+                                <div class="card product-card h-100">
+                                    <div class="product-badge">EPP</div>
+                                    <img src="../../../images/chaleco-ilustrativo.png" class="card-img-top" alt="Chalecos de Protección" style="height: 250px; object-fit: cover;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Chalecos de Protección</h5>
+                                        <p class="card-text text-muted flex-grow-1">Chalecos reflectantes de alta visibilidad para brigadas y personal de emergencia.</p>
+                                        <div class="norm-badges">
+                                            <span class="norm-badge">NOM-017</span>
+                                            <span class="norm-badge">ANSI</span>
+                                        </div>
+                                        <a href="/servicios/equipo-emergencias/productos/chalecos-de-proteccion/" class="btn btn-sm btn-outline-warning mt-3">Ver Detalles</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <div class="card product-card h-100">
+                                <div class="product-badge">EPP</div>
+                                <img src="../../../images/cascos-inicio.png" class="card-img-top" alt="Cascos de Seguridad" style="height: 250px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cascos de Seguridad</h5>
+                                    <p class="card-text text-muted flex-grow-1">Cascos certificados con sistemas de amortiguación para protección en alturas y emergencias.</p>
+                                    <div class="norm-badges">
+                                        <span class="norm-badge">NOM-017</span>
+                                        <span class="norm-badge">ANSI Z89.1</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-warning mt-3">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card product-card h-100">
+                                <div class="product-badge">EPP</div>
+                                <img src="../../../images/guantes-inicio.png" class="card-img-top" alt="Guantes de Protección" style="height: 250px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Guantes de Protección</h5>
+                                    <p class="card-text text-muted flex-grow-1">Guantes resistentes para manejo de emergencias, riesgos químicos y mecánicos.</p>
+                                    <div class="norm-badges">
+                                        <span class="norm-badge">NOM-017</span>
+                                        <span class="norm-badge">NOM-005</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-warning mt-3">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Equipos de Extinción -->
+                <section class="mb-5">
+                    <h2 class="h4 category-header">Equipos de Extinción</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card product-card h-100">
+                                <div class="product-badge">EXTINCIÓN</div>
+                                <img src="../../../images/extintores-inicio.png" class="card-img-top" alt="Extintores" style="height: 250px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Extintores</h5>
+                                    <p class="card-text text-muted flex-grow-1">Extintores de polvo, agua y CO2 para diferentes tipos de fuegos con certificación vigente.</p>
+                                    <div class="norm-badges">
+                                        <span class="norm-badge">NOM-002</span>
+                                        <span class="norm-badge">NFPA 10</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-warning mt-3">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card product-card h-100">
+                                <div class="product-badge">EXTINCIÓN</div>
+                                <img src="../../../images/sistemas-rociadores.png" class="card-img-top" alt="Sistemas de Rociadores" style="height: 250px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Sistemas de Rociadores</h5>
+                                    <p class="card-text text-muted flex-grow-1">Sistemas automáticos de rociadores para protección de áreas amplias contra incendios.</p>
+                                    <div class="norm-badges">
+                                        <span class="norm-badge">NOM-002</span>
+                                        <span class="norm-badge">NFPA</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-warning mt-3">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sistemas de Alarma y Señalización -->
+                <section class="mb-5">
+                    <h2 class="h4 category-header">Alarma y Señalización</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card product-card h-100">
+                                <div class="product-badge">ALARMA</div>
+                                <img src="../../../images/detectores-inicio.png" class="card-img-top" alt="Detectores de Humo" style="height: 250px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Detectores de Humo e Incendio</h5>
+                                    <p class="card-text text-muted flex-grow-1">Detectores ionizados y fotoeléctricos con certificación de última generación.</p>
+                                    <div class="norm-badges">
+                                        <span class="norm-badge">NOM-002</span>
+                                        <span class="norm-badge">NFPA 72</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-warning mt-3">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card product-card h-100">
+                                <div class="product-badge">SEÑALIZACIÓN</div>
+                                <img src="../../../images/senales-inicio.png" class="card-img-top" alt="Señalización" style="height: 250px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Señalización de Emergencia</h5>
+                                    <p class="card-text text-muted flex-grow-1">Señales de evacuación, rutas de escape y símbolos de seguridad normalizados.</p>
+                                    <div class="norm-badges">
+                                        <span class="norm-badge">NOM-026</span>
+                                        <span class="norm-badge">ISO 7010</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-warning mt-3">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="alert alert-warning mt-5">
+                    <h5>¿No encuentras lo que buscas?</h5>
+                    <p>Contáctanos para consultar otros equipos especializados o soluciones personalizadas según tus necesidades específicas.</p>
+                    <a href="/contacto/" class="btn btn-warning">Solicitar Información</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer incluido desde partials -->
+    <div data-include="../../../partials/footer.html"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/includes.js"></script>
+</body>
+</html>

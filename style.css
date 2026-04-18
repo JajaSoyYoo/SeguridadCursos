@@ -274,12 +274,51 @@ header{
   background: rgba(196,48,43,0.04);
 }
 
+/* Estilo serio y profesional para el submenú de Equipo de Emergencias (acento amarillo) */
+#submenuEquipo .list-unstyled li + li { margin-top: .45rem; }
+
+#submenuEquipo .list-unstyled a {
+  color: #111 !important;
+  font-weight: 600;
+  display: block;
+  padding: .28rem .6rem;
+  padding-left: 1.2rem; /* más espacio para el indicador */
+  border-radius: .35rem;
+  position: relative;
+  transition: color .18s ease, background-color .18s ease;
+  text-decoration: none !important;
+}
+
+#submenuEquipo .list-unstyled a::before {
+  content: "";
+  position: absolute;
+  left: .45rem; /* separa el punto del texto */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #f6c84c; /* amarillo */
+  border-radius: 2px;
+  opacity: .95;
+}
+
+#submenuEquipo .list-unstyled a:hover {
+  color: #f39c12 !important;
+  background: rgba(246,200,76,0.08);
+}
+
 /* En pantallas pequeñas mantener suficiente separación */
 @media (max-width: 767.98px) {
   #submenuProteccion .list-unstyled a {
     padding-left: 1rem; /* ajuste para móvil */
   }
   #submenuProteccion .list-unstyled a::before {
+    left: .35rem;
+  }
+  #submenuEquipo .list-unstyled a {
+    padding-left: 1rem; /* ajuste para móvil */
+  }
+  #submenuEquipo .list-unstyled a::before {
     left: .35rem;
   }
 }
